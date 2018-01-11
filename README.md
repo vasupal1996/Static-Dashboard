@@ -1,0 +1,1 @@
+A simple static dashboard made with HTML, CSS, Bootstrap, jQuery and HighChart Javasript Library.
