@@ -1,0 +1,114 @@
+/* body {
+    overflow-x: hidden;
+} */
+
+/* .navbar {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+} */
+
+/* #wrapper {
+    width: 250px;
+    position: fixed;
+} */
+
+#content-wrapper {
+    padding: 0px;
+    margin: 0px;
+}
+
+#sidebar-nav {
+    background: black;
+    padding: 0px; 
+    height: 1000px;
+}
+
+/* #sidebar-content{
+    height: 90%;
+
+} */
+
+#sidebar-content li{
+    list-style: none;
+}
+
+#sidebar-image-container{
+    margin-top: 50px;
+}
+
+#sidebar-image{
+
+}
+
+#sidebar-content{
+    padding: 0px;
+}
+
+#sidebar-content ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+#sidebar-content ul li{
+    /* padding: 0px;
+    margin: 0px; */
+    min-height: 50px;
+}
+
+.sidebar-items{
+    /* padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 7%; */
+}
+
+#sidebar-content ul li {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 5%;
+    padding-top: 6%;
+}
+
+
+#sidebar-content ul li:hover {
+     
+    background-color: #383838;
+    color: grey;
+}
+
+.sidebar-items a{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-items a:hover{
+    text-decoration: none;
+}
+
+#navbar-wrapper{
+    padding: 0px;
+    margin: 0px;
+}
+
+#panel-1{
+    margin: 10px;
+}
+
+#home-card-1 {
+    /* padding: 0px;
+    margin: 0px; */
+}
+
+#home-card-1 h3{
+    padding: 0px;
+    margin: 0px;
+}
+
+.user-info h5, h4{
+    color: white;
+}
+
+.navbar{
+    border-radius: 0px;
+}
+
+

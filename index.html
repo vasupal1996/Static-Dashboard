@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- bootstrap javascript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- highchart scripts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <!-- bootstrap 3 theme from bootswatch.com -->
+    <link rel="stylesheet" href="https://bootswatch.com/3/lumen/bootstrap.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <title>VasuPal - Dashboard</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" id="wrapper">
+            <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs" id="sidebar-nav">
+                <div class="row" id="sidebar-image-container">
+                    <div class="col-lg-12 col-md-12 col-sm-12" align='center'>
+                        <img id="sidebar-image" src="https://imagineacademy.microsoft.com/content/images/microsoft-img.png" class="img-responsive img-rounded" width="100px" alt="profile-image">                            
+                        <div class="user-info">
+                            <h5>Tech User</h5>
+                            <h4>Bank Admin</h4>
+                        </div>
+                    </div>
+                </div>
+               <br><br>
+                <div class="row" id="sidebar-content">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                        <ul>
+                            <li class="sidebar-items">
+                                <a href="">Dashboard</a>
+                            </li>
+                            <li class="sidebar-items">
+                                <a href="">Upload</a>
+                            </li>
+                            <li class="sidebar-items">
+                                <a href="">Financial Health</a>
+                            </li>
+                            <li class="sidebar-items">
+                                <a href="">Digital Health</a>
+                            </li>
+                            <li class="sidebar-items">
+                                <a href="">Artificial Intelligence</a>
+                            </li>
+                            <li class="sidebar-items">
+                                <a href="">Users</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" id="content-wrapper">
+                <div id="navbar-wrapper">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" id="sidebar-control-button" href="#">
+                                    <span class="glyphicon glyphicon-align-justify"></span></a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                                
+                            <form class="navbar-form navbar-left">
+                            <div class="form-group form-inline">
+                                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>                                                                        
+                                    
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Files</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-bullhorn"></span> Alerts <span class="badge">42</span></a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span><img src="https://image.flaticon.com/teams/slug/freepik.jpg" alt="" width="21px;" class="img-rounded" ></span> Vasu Pal <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Profile</a></li>
+                                        <li><a href="#">Prefrences</a></li>
+                                        <li><a href="#">Account</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Settings</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                </div>
+
+                <div id="contents-wrapper">
+                    <div class="panel panel-default" id="panel-1">
+                        <div class="panel-body" id="home-card-1">
+                            <h3 class="home-head-1">Finscore - Individual Scorecard</h3>
+                            <h3> <small>last updated: 11:11 AM 11 July 2011</small></h3>
+                            <div style="text-align:right;">
+                                <a href="#" >Refresh</a>
+                            </div>
+                            <div id="customer-id" align='center'>
+                                <h3>ID: 563125</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <div class="panel panel-default" id="panel-2">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">User Details</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                    <h5>Name:</h5>
+                                    <h5>CIBIL Score:</h5>
+                                    <h5>A/c No:</h5>
+                                    <h5>PAN No:</h5>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6" align='right'>
+                                    <h5 id="name">VASU PAL</h5>
+                                    <h5 id="cibil">None</h5>
+                                    <h5 id="account">1234567890123456</h5>
+                                    <h5 id="pan">ABC666ABC</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 pull-right">
+                        <div class="panel panel-default" id="panel-3">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Portfolio Ranking</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="container-portfolio-ranking" style="min-width: 310px; max-width: 400px; height: 300px; margin: 0 auto">
+                                </div>              
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Default Probability</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="container-DEFAULT" style="min-width: 310px; max-width: 400px; height: 300px; margin: 0 auto">
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-right">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">CIBIL Score</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="container-CIBIL" style="min-width: 310px; max-width: 400px; height: 300px; margin: 0 auto"></div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">RISK Score</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="container-RISK" style="min-width: 310px; max-width: 400px; height: 300px; margin: 0 auto"></div>  
+                                </div>
+                                <div class="panel-footer"><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> View Source</a></div>
+                                
+                            </div>
+                        </div>
+                </div>
+                
+                <div id="footer-wrapper">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" align='center'>
+                        <img src="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAwjAAAAJDM4YzMxZmQ3LWI5YjctNDY2OC04OGQxLTc2NTNiZWNhMTg3MQ.png" width="150px" class="img-responsive" alt="footer-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- custom scripts -->
+<script src="script.js"></script>
+</html>
